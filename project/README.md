@@ -161,7 +161,7 @@ MIT License - feel free to use this code for your own projects.
 # development logs:
 
 12/8/24
-update to the .readme file for the project
-the game/inventory.py, 
-game/gui_manager.py, 
-and the game/player.py have been updated
+Update to the readme.md file for the project
+Created the game/inventory.py
+Created game/gui_manager.py
+Updated game/player.py have been updated
