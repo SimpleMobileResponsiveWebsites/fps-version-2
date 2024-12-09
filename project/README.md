@@ -156,3 +156,11 @@ MIT License - feel free to use this code for your own projects.
 
 - Built with [Panda3D](https://www.panda3d.org/)
 - Web compatibility by [Pygbag](https://pygame-web.github.io/)
+- 
+
+---
+
+update to the .readme file for the project
+the game/inventory.py, 
+game/gui_manager.py, 
+and the game/player.py have been updated
