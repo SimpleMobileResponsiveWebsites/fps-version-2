@@ -1,0 +1,9 @@
+{
+    "app": "main.py",
+    "title": "Panda3D FPS Game",
+    "width": 800,
+    "height": 600,
+    "requirements": ["requirements.txt"],
+    "assets": ["assets/"],
+    "python_version": "3.11"
+}

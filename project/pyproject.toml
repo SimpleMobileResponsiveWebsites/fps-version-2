@@ -1,0 +1,12 @@
+[project]
+name = "panda3d-fps-game"
+version = "0.1.0"
+description = "A web-based FPS game using Panda3D and Pygbag"
+dependencies = [
+    "pygbag==0.9.2",
+    "panda3d==1.10.13"
+]
+
+[tool.pygbag]
+build-command = "python -m pygbag --build"
+serve-command = "python -m pygbag --serve"
