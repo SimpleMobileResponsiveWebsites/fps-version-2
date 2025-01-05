@@ -82,7 +82,9 @@ class Player:
             direction += self.camera.getQuat().getRight()
         
         direction.setZ(0)
-        if not direction.isZero():
+
+        # Updated check to avoid 'isZero()' method error
+        if direction.length() > 0:
             direction.normalize()
             self.camera.setPos(self.camera.getPos() + direction * speed)
     

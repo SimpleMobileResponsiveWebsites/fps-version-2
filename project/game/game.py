@@ -1,4 +1,4 @@
-from panda3d.showbase.ShowBase import ShowBase
+from direct.showbase.ShowBase import ShowBase
 from .input_handler import InputHandler
 from .player import Player
 from .window_manager import WindowManager
