@@ -165,3 +165,194 @@ Update to the readme.md file for the project
 Created the game/inventory.py
 Created game/gui_manager.py
 Updated game/player.py have been updated
+
+
+
+-------
+# current map configuration
+
+Current Configuration
+{
+"heightfield_image":"none"
+"focal_point":[
+0:7
+1:4
+]
+"horizontal_scale":1.5000000000000004
+"vertical_scale":235
+"polygon_count":100000
+"visibility_radius":1000
+"max_triangles":100000
+"map_details":{
+"terrain_type":"desert"
+"water_level":0
+"vegetation_density":0.5
+"buildings":[
+0:{
+"name":"barracks"
+"position":[
+0:45
+1:50
+]
+"height":10
+}
+1:{
+"name":"Med Tent"
+"position":[
+0:450
+1:550
+]
+"height":10
+}
+2:{
+"name":"Med Tent"
+"position":[
+0:600
+1:650
+]
+"height":10
+}
+3:{
+"name":"Med Tent"
+"position":[
+0:700
+1:750
+]
+"height":10
+}
+4:{
+"name":"Mechanic"
+"position":[
+0:800
+1:850
+]
+"height":10
+}
+5:{
+"name":"Armory"
+"position":[
+0:900
+1:901
+]
+"height":10
+}
+6:{
+"name":"Hangar"
+"position":[
+0:7
+1:4
+]
+"height":10
+}
+7:{
+"name":"Hospital"
+"position":[
+0:1200
+1:1201
+]
+"height":30
+}
+8:{
+"name":"Hospital Maintenance Building"
+"position":[
+0:1290
+1:1291
+]
+"height":10
+}
+9:{
+"name":"Hospital Parcade Shack"
+"position":[
+0:1300
+1:1301
+]
+"height":10
+}
+]
+"lanes":[]
+"points_of_interest":[
+0:{
+"name":"barracks"
+"position":[
+0:45
+1:50
+]
+"description":"barracks is a barracks where there a gun crates, ammo crates, helmet crates, tactical rig crates, ballistic vest crates, item crates and additional loot spawns, where players can loot."
+}
+1:{
+"name":"Med Tent"
+"position":[
+0:450
+1:550
+]
+"description":"Med Tent is where there is medical supply crates that have heals that players can loot."
+}
+2:{
+"name":"Med Tent"
+"position":[
+0:600
+1:650
+]
+"description":"Med Tent is where there is medical supply crates that have heals that players can loot."
+}
+3:{
+"name":"Med Tent"
+"position":[
+0:700
+1:750
+]
+"description":"Med Tent is where there is medical supply crates that have heals that players can loot."
+}
+4:{
+"name":"Mechanic"
+"position":[
+0:800
+1:850
+]
+"description":"Mechanic is an auto repair shop next to the med tents that is now repurposed as a gun parts cache for players to loot weapons parts from crates all over the building.
+"
+}
+5:{
+"name":"Hangar"
+"position":[
+0:7
+1:4
+]
+"description":"Hangar is a point of interest where players spawn at.   Hanger is a military base hanger that has gun parts cache for players to loot weapons parts from crates all over the building, medical supply crates that have heals that players can loot and gun crates, ammo crates, helmet crates, tactical rig crates, ballistic vest crates, item crates and additional loot spawns, where players can loot."
+}
+6:{
+"name":"Hospital"
+"position":[
+0:1200
+1:1201
+]
+"description":"Hospital is a building, where players and find medical supply crates that have heals that players can loot."
+}
+7:{
+"name":"Hospital Maintenance Building"
+"position":[
+0:1290
+1:1291
+]
+"description":"Hospital Maintenance Building is where players can find mission items, rare items and rare loot spawns.  "
+}
+8:{
+"name":"Hospital Parcade Shack"
+"position":[
+0:0
+1:0
+]
+"description":"Hospital Parcade Shack is where players can find mission items, rare items and rare loot spawns,  has gun parts cache for players to loot weapons parts from crates all over the building, medical supply crates that have heals that players can loot and gun crates, ammo crates, helmet crates, tactical rig crates, ballistic vest crates, item crates and additional loot spawns, where players can loot."
+}
+9:{
+"name":"Armory"
+"position":[
+0:900
+1:901
+]
+"description":"Armory is where the military supply is.  Players can find the bosses, among the compound.  Additionally,  players can find mission items, rare items and rare loot spawns,  has gun parts cache for players to loot weapons parts from crates all over the building, medical supply crates that have heals that players can loot and gun crates, ammo crates, helmet crates, tactical rig crates, ballistic vest crates, item crates and additional loot spawns, where players can loot."
+}
+]
+}
+}
+

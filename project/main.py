@@ -1,22 +1,45 @@
-import asyncio
-from game.web_game import WebGame
-import os
-import sys
+from direct.showbase.ShowBase import ShowBase
+from panda3d.core import load_prc_file_data
+from game.environment import Environment
+from game.player import Player
+from game.input_handler import InputHandler
 
-# Configure Python path for web environment
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Configure engine settings
+load_prc_file_data("", """
+    window-title FPS Game
+    model-path $MAIN_DIR/assets/models
+    framebuffer-multisample 1
+    multisamples 2
+    show-frame-rate-meter 1
+    sync-video #f
+""")
 
-async def main():
-    """Async main entry point for the web game"""
-    game = WebGame()
-    
-    try:
-        while True:
-            game.taskMgr.step()
-            await asyncio.sleep(0)  # Allow other async operations
-    except Exception as e:
-        print(f"Game error: {e}")
-        game.cleanup()
+
+class Game(ShowBase):
+    def __init__(self):
+        super().__init__()
+
+        # Initialize input handler first
+        self.input_handler = InputHandler()
+
+        # Initialize game components
+        self.environment = Environment(self)
+        self.player = Player(self)
+
+        # Set up update task
+        self.taskMgr.add(self.update, "update")
+
+    def update(self, task):
+        """Main game update loop"""
+        dt = globalClock.getDt()
+        self.player.update()
+        return task.cont
+
+
+def main():
+    game = Game()
+    game.run()
+
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

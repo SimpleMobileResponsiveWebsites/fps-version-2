@@ -1,22 +1,20 @@
-import sys
 from direct.showbase.DirectObject import DirectObject
+from panda3d.core import KeyboardButton
+
 
 class InputHandler(DirectObject):
-    def __init__(self, game):
-        self.game = game
-        self.setup_key_map()
-        self.setup_controls()
-    
-    def setup_key_map(self):
+    def __init__(self):
+        super().__init__()
+
         self.key_map = {
             "forward": False,
             "backward": False,
             "left": False,
-            "right": False
+            "right": False,
+            "jump": False
         }
-    
-    def setup_controls(self):
-        # Movement controls
+
+        # Bind keys
         self.accept("w", self.update_key_map, ["forward", True])
         self.accept("w-up", self.update_key_map, ["forward", False])
         self.accept("s", self.update_key_map, ["backward", True])
@@ -25,13 +23,11 @@ class InputHandler(DirectObject):
         self.accept("a-up", self.update_key_map, ["left", False])
         self.accept("d", self.update_key_map, ["right", True])
         self.accept("d-up", self.update_key_map, ["right", False])
-        
-        # Other controls
-        self.accept("escape", sys.exit)
-        self.accept("mouse1", self.game.collision_manager.shoot)
-    
+        self.accept("space", self.update_key_map, ["jump", True])
+        self.accept("space-up", self.update_key_map, ["jump", False])
+
     def update_key_map(self, key, value):
         self.key_map[key] = value
-    
+
     def get_key_map(self):
         return self.key_map
